@@ -51,7 +51,7 @@ def save_to_memory(user_input, gpt_response, filepath='memory.json'):
         'response': gpt_response
     })
 
-    # Sadece son 5 geçmişi tutalım
+    # Store last 5 conversations
     memory = memory[-5:]
 
     with open(filepath, 'w') as f:
